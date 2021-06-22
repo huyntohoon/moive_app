@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 import Movie from "./Movie";
-
+import "./App.css";
 class App extends React.Component {
   state = {
     isLoading: true,
@@ -23,24 +23,27 @@ class App extends React.Component {
   render() {
     const { isLoading, movies } = this.state;
     return (
-      <section class="comtainer">
+      <section className="comtainer">
         {isLoading ? (
-          <div class="loader">
-            <span class="loader__text">Loading...</span>
+          <div className="loader">
+            <span className="loader__text">Loading...</span>
           </div>
         ) : (
-          <div class="movies">
+          <div className="movies">
             {movies.map(
               (
                 movie // movies의 벨류에게 map으로 인자 전체에게 함수 실행(괄호) => 매개변수의 이름
               ) => (
                 <Movie // JS파일의 movie function 실행
+                  // 그리고 오른쪽은 Movie를 실행하기 위한 매개 변수
+                  //
                   key={movie.id}
                   id={movie.id}
                   year={movie.year}
                   title={movie.title}
                   summary={movie.summary}
                   poster={movie.medium_cover_image}
+                  genres={movie.genres}
                 />
               )
             )}
