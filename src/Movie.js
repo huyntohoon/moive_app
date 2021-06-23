@@ -1,8 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "./Movie.css";
-function Movie({ year, title, summary, poster, genres }) {
-  return (
+
+function Movie( {year, title, summary, poster, genres }) { // why use {}?
+                                                           // 표현을 위함 함수를 separate
+  return (  
     <div className="movie">
       <img src={poster} alt={title} title={title} />
       <div className="movie__data">
@@ -10,7 +12,7 @@ function Movie({ year, title, summary, poster, genres }) {
         <h5 className="movie__year">{year}</h5>
         <ul className="genres">
           {genres.map((genre, index) => (
-            <li key={index} className="genres__genre">
+            <li  key={index} className="genres__genre">
               {genre}
             </li>
           ))}
@@ -21,7 +23,7 @@ function Movie({ year, title, summary, poster, genres }) {
   );
 }
 
-Movie.prototype = {
+Movie.prototype = {                 //왜 prototype을 확인하는가?
   id: PropTypes.number.isRequired,
   year: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
