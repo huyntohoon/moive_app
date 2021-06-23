@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/huyntohoon/moive_app/static/css/main.52f19f47.chunk.css",
+    "main.js": "/huyntohoon/moive_app/static/js/main.02c208d8.chunk.js",
+    "main.js.map": "/huyntohoon/moive_app/static/js/main.02c208d8.chunk.js.map",
+    "runtime-main.js": "/huyntohoon/moive_app/static/js/runtime-main.2a69405a.js",
+    "runtime-main.js.map": "/huyntohoon/moive_app/static/js/runtime-main.2a69405a.js.map",
+    "static/js/2.9bacbec6.chunk.js": "/huyntohoon/moive_app/static/js/2.9bacbec6.chunk.js",
+    "static/js/2.9bacbec6.chunk.js.map": "/huyntohoon/moive_app/static/js/2.9bacbec6.chunk.js.map",
+    "index.html": "/huyntohoon/moive_app/index.html",
+    "static/css/main.52f19f47.chunk.css.map": "/huyntohoon/moive_app/static/css/main.52f19f47.chunk.css.map",
+    "static/js/2.9bacbec6.chunk.js.LICENSE.txt": "/huyntohoon/moive_app/static/js/2.9bacbec6.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2a69405a.js",
+    "static/js/2.9bacbec6.chunk.js",
+    "static/css/main.52f19f47.chunk.css",
+    "static/js/main.02c208d8.chunk.js"
+  ]
+}
